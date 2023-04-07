@@ -23,6 +23,8 @@ The files are the following:
  + **Xhea**: (Xhea.sh) a Bash file instanciating the daily fetching routine.
  + **Zsofia**: (Zsofia.sh) the interface.
 
+Everything is built from the bash script *Zsofia.sh* through the option *INIT*: it will build the above mentioned files in \${HOME}/Zsofia/ .
+
 ## Assets Classes
 | Name | Reference |
 |:---:|:---:|
