@@ -1216,7 +1216,7 @@ INIT)
   fi
   break;;
 XHEA)
-  echo "\t\t>>> $r <<<"
+  echo -e "\t\t>>> $r <<<"
   read -p "Enter the date for Xhea:  " -a d
   for j in ${d[@]}; do
   gnome-terminal --title="Xhea Output" -- bash Xhea.sh $j
@@ -1224,7 +1224,7 @@ XHEA)
   unset d; break;;
 ADD)
   while true; do
-  echo "\t\t >>> $r <<<"
+  echo -e "\t\t >>> $r <<<"
   select q in ${Bunch[@]}; do
   case $q in
   Artemis | Demeter | Euterpe | Nemesis | Ophelya | Origami | Phorcys | Satoshi)
@@ -1261,7 +1261,7 @@ ADD)
   done; break;;
 LAST)
   while true; do
-  echo "\t\t>>> $r <<<"
+  echo -e "\t\t>>> $r <<<"
   select q in ${Bunch[@]}; do
   case $q in
   Artemis | Demeter | Euterpe | Nemesis | Ophelya | Origami | Phorcys | Satoshi)
@@ -1281,7 +1281,7 @@ LAST)
   break;;
 REMOVE)
   while true; do
-  echo "\t\t>>> $r <<<"
+  echo -e "\t\t>>> $r <<<"
   select q in ${Bunch[@]}; do
   case $q in
   Artemis | Demeter | Nemesis | Ophelya | Origami | Phorcys | Satoshi | Mercure)
@@ -1311,9 +1311,9 @@ REMOVE)
   done
   done
   break;;
-REPORTING) echo "\n$r not Yet Implemented\n" && sleep 2 && break;;
+REPORTING) echo -e "\n$r not Yet Implemented\n" && sleep 2 && break;;
 CLEAN)
-  echo "\t\t>>> $r -- Cleaning Csilla <<<"
+  echo -e "\t\t>>> $r -- Cleaning Csilla <<<"
   for j in ${Bunch[@]}; do
   echo "Trying to clean-out $j ..." && sleep 1
   cd "$Pathee"/$hraf/"$j"/ && ls Csilla-* && sleep 1 && rm -r Csilla-* && cd -
