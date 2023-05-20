@@ -32,7 +32,7 @@ fi
 echo -e "\nZsofia 0.1.0\nDeveloper: Soel Philippe (soelderivatives@skiff.com)\nMaintainer: <S>\n"
 Bunch=( Artemis Demeter Euterpe Mercure Nemesis Ophelya Origami Phorcys Satoshi Quit )
 BunchD=( "US Stocks" "Commodity Futures" "Equity Indexes, spot" "Economical metrics" "Equity Indexes, Futures" "ETFs, mainly" "Japan Stocks" "Currencies against USD" "Cryptocurrencies against USD" "Quit" )
-oneD=( \"AAPL\", \"MSFT\", \"TSLA\", \"SBUX\", \"META\", \"GS\", \"MS\" )
+oneD=( \"AAPL\", \"BYND\", \"COP\", \"PLTR\", \"TSLA\", \"XOM\" )
 MenuM=( "LAST" "ADD" "XHEA" "INIT" "REMOVE" "CLEAN" "REPORTING" "QUIT" )
 Pathee="${HOME}/Zsofia/"
 Err="${Pathee}DebugMeSo.txt"
