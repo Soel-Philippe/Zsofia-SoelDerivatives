@@ -20,7 +20,7 @@ In this folder I dropped some datasets.
 ### Mercure (Economics)
 - MORTGAGE5US
 - SOFR
-- 
+
 ### Nemesis (Equity Ind. Futures)
 - MES
 - MNQ
