@@ -1208,6 +1208,14 @@ INIT)
   echo -e "WARNING: $0 will be moved into $Pathee\n"
   echo -e "Zsofia will exit, please launch it from $Pathee\n"
   read -p "Press ENTER to continue..."
+  if [ -d init_ds ]; then
+  mv init_ds/*T.csv ${Pathee}.Hrafnhildur/Origami/
+  mv init_ds/MES.csv init_ds/MNQ.csv ${Pathee}.Hrafnhildur/Nemesis/
+  mv init_ds/COP.csv init_ds/BYND.csv mv init_ds/PLTR.csv init_ds/TSLA.csv init_ds/XOM.csv ${Pathee}.Hrafnhildur/Artemis/
+  mv init_ds/XAX.csv init_ds/GDAXI.csv ${Pathee}.Hrafnhildur/Nemesis/
+  mv init_ds/CL.csv init_ds/HO.csv ${Pathee}.Hrafnhildur/Demeter/
+  mv init_ds/XLF.csv init_ds/QQQ.csv ${Pathee}.Hrafnhildur/Ophelya/
+  fi
   mv -v -f ${PWD}/$0 $Pathee && "Quitting..." && sleep 1 && exit
   echo "Looks like Zsofia.sh didn't move, please move it manually into $Pathee"
   ## Perform an EXITING here
